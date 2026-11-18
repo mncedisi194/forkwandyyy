@@ -3,6 +3,7 @@ const toast = document.querySelector("#toast");
 const bagDrawer = document.querySelector("#bagDrawer");
 const bagItems = document.querySelector("#bagItems");
 const welcomeOverlay = document.querySelector("#welcomeOverlay");
+const surpriseModal = document.querySelector("#surpriseModal");
 const selectedTreats = [];
 
 function showToast(message) {
@@ -68,6 +69,12 @@ function launchConfetti() {
   setTimeout(() => { confetti.innerHTML = ""; }, 3200);
 }
 
+function closeSurprise() {
+  surpriseModal.classList.remove("open");
+  surpriseModal.setAttribute("aria-hidden", "true");
+  document.querySelector("#surpriseButton").focus();
+}
+
 document.querySelector("#openWelcome").addEventListener("click", () => {
   welcomeOverlay.classList.add("hidden");
   launchConfetti();
@@ -79,7 +86,18 @@ document.querySelector("#heartButton").addEventListener("click", () => {
 });
 
 document.querySelector("#surpriseButton").addEventListener("click", () => {
+  surpriseModal.classList.add("open");
+  surpriseModal.setAttribute("aria-hidden", "false");
+  document.querySelector("#surpriseClose").focus();
   launchConfetti();
-  showToast("Kwandy, you deserve a whole day of tiny joys ✦");
+});
+
+document.querySelector("#surpriseClose").addEventListener("click", closeSurprise);
+document.querySelector("#surpriseBackdrop").addEventListener("click", closeSurprise);
+document.querySelector("#surpriseThanks").addEventListener("click", closeSurprise);
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && surpriseModal.classList.contains("open")) {
+    closeSurprise();
+  }
 });
 

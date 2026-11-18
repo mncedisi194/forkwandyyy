@@ -42,6 +42,22 @@
       <button class="drawer-clear" id="clearBag" type="button">Clear bag</button>
     </aside>
   </div>
+  <div class="surprise-modal" id="surpriseModal" aria-hidden="true">
+    <button class="surprise-backdrop" id="surpriseBackdrop" type="button" aria-label="Close surprise"></button>
+    <section class="surprise-card" role="dialog" aria-modal="true" aria-labelledby="surpriseTitle" aria-describedby="surpriseMessage">
+      <button class="surprise-close" id="surpriseClose" type="button" aria-label="Close surprise">×</button>
+      <div class="surprise-decoration" aria-hidden="true">
+        <span class="surprise-flower">✿</span>
+        <span class="surprise-heart">♡</span>
+        <span class="surprise-sparkle">✦</span>
+      </div>
+      <p class="surprise-kicker">A little note, just for you</p>
+      <h2 id="surpriseTitle">You make life <em>sweeter</em>, Kwandy!</h2>
+      <p id="surpriseMessage">Thanks for being your lovely self. Hope this tiny corner of the internet made you smile today.</p>
+      <div class="surprise-stamp" aria-hidden="true">WITH<br><span>♡</span><br>LOVE</div>
+      <button class="surprise-thanks" id="surpriseThanks" type="button">Aww, thank you! <span>♡</span></button>
+    </section>
+  </div>
   <div class="confetti" id="confetti" aria-hidden="true"></div>
   <header class="nav">
     <a class="brand" href="#" aria-label="Kwandy's Sweet Corner home">
