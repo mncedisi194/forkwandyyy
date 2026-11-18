@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kwandy's Sweet Corner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="nav">
+    <a class="brand" href="#" aria-label="Kwandy's Sweet Corner home">
+      <span class="brand-mark" aria-hidden="true">
+        <span class="brand-ear left"></span>
+        <span class="brand-ear right"></span>
+        <span class="brand-face"></span>
+        <span class="brand-bow"></span>
+      </span>
+      <span>KWANDY'S</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a>
+      <a href="#bakes">Sweet Bakes</a>
+      <a href="#love">Our Story</a>
+    </nav>
+    <button class="bag-button" type="button" aria-label="Open bag">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M5 8h14l-1 12H6L5 8Zm4 0V6a3 3 0 0 1 6 0v2" />
+      </svg>
+      <span class="bag-count" id="bagCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> baked with a little magic</p>
+        <h1>A sweet little <em>hello</em> just for Kwandy</h1>
+        <p class="hero-text">Tiny treats, warm wishes, and a sprinkle of friendship magic — made to brighten your whole day.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#bakes">Pick a sweet <span>→</span></a>
+          <button class="heart-button" id="heartButton" type="button" aria-label="Send a love message">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z" />
+            </svg>
+            Send love
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Cute pink cat holding a strawberry cake">
+        <span class="sparkle sparkle-one">✦</span>
+        <span class="sparkle sparkle-two">✦</span>
+        <span class="sparkle sparkle-three">·</span>
+        <div class="flower flower-a">✿</div>
+        <div class="flower flower-b">✿</div>
+        <div class="cat-shadow"></div>
+        <div class="cat">
+          <div class="ear ear-left"><span></span></div>
+          <div class="ear ear-right"><span></span></div>
+          <div class="head">
+            <div class="bow">
+              <span class="bow-loop bow-left"></span>
+              <span class="bow-loop bow-right"></span>
+              <span class="bow-knot"></span>
+            </div>
+            <div class="face">
+              <span class="eye eye-left"></span>
+              <span class="eye eye-right"></span>
+              <span class="nose"></span>
+              <span class="whisker whisker-left-a"></span>
+              <span class="whisker whisker-left-b"></span>
+              <span class="whisker whisker-right-a"></span>
+              <span class="whisker whisker-right-b"></span>
+            </div>
+          </div>
+          <div class="body">
+            <div class="apron"><span>♡</span></div>
+            <span class="paw paw-left"></span>
+            <span class="paw paw-right"></span>
+          </div>
+        </div>
+        <div class="cake">
+          <div class="cake-icing"><span></span></div>
+          <div class="cake-body"><i></i><i></i><i></i></div>
+          <div class="strawberry">♥</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bakes" id="bakes">
+      <div class="section-heading">
+        <p class="eyebrow"><span></span> today’s favorites</p>
+        <h2>A treat for every mood</h2>
+      </div>
+      <div class="cards">
+        <article class="treat-card card-pink">
+          <div class="treat-art cupcake-art">
+            <span class="cupcake-cherry"></span>
+            <span class="cupcake-top"></span>
+            <span class="cupcake-paper"></span>
+          </div>
+          <div class="card-copy">
+            <span>01</span>
+            <h3>Strawberry Kiss</h3>
+            <p>Soft vanilla, berry cream, and a whole lot of sweetness.</p>
+          </div>
+          <button class="add-button" type="button" data-name="Strawberry Kiss" aria-label="Add Strawberry Kiss to bag">+</button>
+        </article>
+        <article class="treat-card card-cream">
+          <div class="treat-art cake-art">
+            <span class="slice-top"></span>
+            <span class="slice-face"></span>
+            <span class="slice-berry">♥</span>
+          </div>
+          <div class="card-copy">
+            <span>02</span>
+            <h3>Cloudy Cheesecake</h3>
+            <p>Dreamy, fluffy, and light as a little pink cloud.</p>
+          </div>
+          <button class="add-button" type="button" data-name="Cloudy Cheesecake" aria-label="Add Cloudy Cheesecake to bag">+</button>
+        </article>
+        <article class="treat-card card-yellow">
+          <div class="treat-art cookie-art">
+            <span class="cookie-face"><i></i><i></i><b>⌣</b></span>
+            <span class="cookie-bow"></span>
+          </div>
+          <div class="card-copy">
+            <span>03</span>
+            <h3>Honey Hugs</h3>
+            <p>Golden butter cookies for cozy cuddles and long chats.</p>
+          </div>
+          <button class="add-button" type="button" data-name="Honey Hugs" aria-label="Add Honey Hugs to bag">+</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="story" id="love">
+      <div class="story-sticker">made<br>with <span>♡</span></div>
+      <p class="story-kicker">A tiny note</p>
+      <blockquote>“Some friendships deserve their own little corner of sweetness.”</blockquote>
+      <button class="primary-button" id="surpriseButton" type="button">Open a surprise <span>→</span></button>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
