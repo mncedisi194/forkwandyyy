@@ -11,6 +11,38 @@
 </head>
 <body>
   <div class="grain"></div>
+  <div class="welcome-overlay" id="welcomeOverlay" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle">
+    <div class="welcome-sparkles" aria-hidden="true">
+      <span>✦</span><span>♡</span><span>✿</span><span>✦</span><span>·</span>
+    </div>
+    <div class="welcome-card">
+      <div class="welcome-seal" aria-hidden="true"><span>✿</span></div>
+      <p class="welcome-kicker">A tiny surprise, personally wrapped</p>
+      <h2 id="welcomeTitle">For <em>Kwandy</em></h2>
+      <p>Pick a sweet, send a little love, and open the surprise hidden at the end.</p>
+      <button class="welcome-button" id="openWelcome" type="button">
+        Open my surprise <span>♡</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="bag-drawer" id="bagDrawer" aria-hidden="true">
+    <button class="drawer-backdrop" id="drawerBackdrop" type="button" aria-label="Close bag"></button>
+    <aside>
+      <div class="drawer-heading">
+        <div>
+          <p>Kwandy's bag</p>
+          <h2>Your sweet picks</h2>
+        </div>
+        <button class="drawer-close" id="drawerClose" type="button" aria-label="Close bag">×</button>
+      </div>
+      <div class="bag-items" id="bagItems">
+        <p class="bag-empty">Your bag is waiting for something sweet.</p>
+      </div>
+      <button class="drawer-clear" id="clearBag" type="button">Clear bag</button>
+    </aside>
+  </div>
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
   <header class="nav">
     <a class="brand" href="#" aria-label="Kwandy's Sweet Corner home">
       <span class="brand-mark" aria-hidden="true">
